@@ -8,28 +8,31 @@
 
 <div class="container mt-3">
   <div class="mt-4 p-5 bg-secondary text-white rounded text-center">
-    <h1>Bioscience Map of Maine</h1> 
-    <p>Hover over points to view more information</p> 
+    <h1>Brushed Earthquakes</h1> 
+    <p>Move and Reconfigure Brush to Filter the Map</p> 
   </div>
 </div>
 
 <div class="container">
+
+
   <div class="row">
   	<div class="col text-center">
-  		<div id="viewof world"></div>
+  		<div id="observablehq-viewof-Maine-72b1a92e"></div>
   	</div>
   </div>
+
 
 
 </div>
 
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@observablehq/inspector@3/dist/inspector.css">
-<script type="module">
-  import {Runtime, Inspector} from "https://cdn.jsdelivr.net/npm/@observablehq/runtime@4/dist/runtime.js";
-  import define from "https://api.observablehq.com/d/7c1266274ae1ee4b@741.js?v=3";
-  new Runtime().module(define, name => {
-    if (name === "viewof world") return new Inspector(document.querySelector("#observablehq-viewof-world-8724f131"));
-  });
+		<script type="module">
+import {Runtime, Inspector} from "https://cdn.jsdelivr.net/npm/@observablehq/runtime@5/dist/runtime.js";
+import define from "https://api.observablehq.com/d/872f55c9c27e4987@272.js?v=3";
+new Runtime().module(define, name => {
+  if (name === "viewof Maine") return new Inspector(document.querySelector("#observablehq-viewof-Maine-72b1a92e"));
+});
 </script>
 
 </body>
